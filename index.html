@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Vaccination</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+               <div class="button-box">
+                   <div id="btn"></div>
+                  <button type="button" class="toggle-btn" onclick="user()">user</button>
+                  <button type="button" class="toggle-btn" onclick="admin()">admin</button>           
+           </div>
+           <form id="user" class="input-group">
+               <button type="submit" class="submit-btn">login</button>
+               <button type="submit" class="submit-btn">signup</button>
+               <button type="submit" class="submit-btn">search for vaccination centre</button>
+               <button type="submit" class="submit-btn">apply for vaccination</button>
+               <button type="submit" class="submit-btn">logout</button>
+           </form>
+           <form id="admin" class="input-group">
+                <button type="submit" class="submit-btn">Login</button>
+                <button type="submit" class="submit-btn">Add vaccination centers</button>
+                <button type="submit" class="submit-btn">Get dosage details</button>
+                <button type="submit" class="submit-btn">Remove vaccinated centres</button>
+            </form>
+        </div>
+            
+            </div>
+            <script>
+                var x = document.getElementById("user");
+                var y = document.getElementById("admin");
+                var z = document.getElementById("btn");
+                function admin(){
+                    x.style.left="-400px";
+                    y.style.left="50px";
+                    z.style.left="110px";
+                }
+                function user(){
+                    x.style.left="50px";
+                    y.style.left="450px";
+                    z.style.left="0px";
+                }
+            </script>
+
+    </body>
+</html>
